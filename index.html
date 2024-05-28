@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Transport Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vehicle Transport Converter</h1>
+      <div class="input-group">
+        <label for="distance">Enter Distance (km):</label>
+        <input type="number" id="distance" name="distance" />
+      </div>
+      <div class="vehicle-selection">
+        <label for="vehicle">Select Vehicle:</label>
+        <select id="vehicle" name="vehicle">
+          <option value="Maruti Suzuki Alto">Maruti Suzuki Alto</option>
+          <option value="Hyundai i20">Hyundai i20</option>
+          <option value="Maruti Suzuki Swift">Maruti Suzuki Swift</option>
+          <option value="Maruti Suzuki Dzire">Maruti Suzuki Dzire</option>
+          <option value="Hyundai Creta">Hyundai Creta</option>
+          <option value="Toyota Fortuner">Toyota Fortuner</option>
+        </select>
+      </div>
+      <button id="calculateBtn">Calculate</button>
+      <div id="result">
+        <h2>Result</h2>
+        <p id="time"></p>
+        <p id="fuel"></p>
+      </div>
+      <div id="comparison">
+        <h2>Comparison with other vehicles</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Vehicle</th>
+              <th>Time (hours)</th>
+              <th>Fuel Consumption (liters)</th>
+              <th>Range Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic content will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
